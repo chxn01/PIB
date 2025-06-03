@@ -9,6 +9,7 @@ function Login() {
   const [error, setError] = useState('');
   const navigate = useNavigate(); // 로그인 성공 후 페이지 이동
   const { login } = useContext(AuthContext);
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError(""); // 에러 초기화
